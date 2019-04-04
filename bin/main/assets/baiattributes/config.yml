@@ -1,6 +1,0 @@
-DamageAttributes:
-  Damage: Damage.js
-  Defense: Defense.js
-  CritDamage: Crit.js
-  Crit: None.js
-  Vampire: Vampire.js
