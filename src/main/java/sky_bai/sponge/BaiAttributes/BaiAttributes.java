@@ -7,7 +7,7 @@ import org.spongepowered.api.event.Listener;
 import org.spongepowered.api.event.game.state.GamePreInitializationEvent;
 import org.spongepowered.api.plugin.Plugin;
 
-@Plugin(id = "baiattributes", name = "BaiAttributes-Sponge")
+@Plugin(id = "baiattributes", name = "BaiAttributes-Sponge",version = "0.1.0")
 public class BaiAttributes {
 	final static Logger logger = LoggerFactory.getLogger("BaiAttributes");
 
@@ -22,7 +22,6 @@ public class BaiAttributes {
 	}
 
 	final private void setConfigFile() {
-		
 			try {
 				if (BaiConfig.configPath.toFile().exists() == false) {
 					Sponge.getAssetManager().getAsset(this, "JavaScript/Crit.js").get().copyToDirectory(BaiConfig.JavaScriptPath, false, true);
